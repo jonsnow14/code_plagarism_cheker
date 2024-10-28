@@ -25,7 +25,7 @@ google_search_url = 'https://www.googleapis.com/customsearch/v1'
 '''
 future work 
 check with other embedding models as well
-write functions to check with exch embedding models oen by one, code will check with each embedding model then select the best result
+write functions to check with each embedding models one by one, check with each embedding model then select the best result (similarity)
 '''
 def get_code_embedding(code_snippet):
     response = openai.Embedding.create(
