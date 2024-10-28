@@ -22,10 +22,15 @@ google_cse_id = 'your-custom-search-engine-id'  # Replace with your CSE ID
 google_search_url = 'https://www.googleapis.com/customsearch/v1'
 
 # Function to generate embeddings for a code snippet
+'''
+future work 
+check with other embedding models as well
+write functions to check with exch embedding models oen by one, code will check with each embedding model then select the best result
+'''
 def get_code_embedding(code_snippet):
     response = openai.Embedding.create(
         input=code_snippet,
-        model="text-embedding-ada-002"  # Use an appropriate embedding model
+        model="text-embedding-ada-002"  #  embedding model-check with other embedding models a
     )
     return response['data'][0]['embedding']
 
