@@ -118,7 +118,7 @@ def check_code_similarity(code_snippet, faiss_index):
     distances, indices = faiss_index.search(new_embedding, k=3)  # Get top 3 similar snippets
     return distances, indices
 
-# Search for code on multiple platforms
+# Search for code on multiple platforms -github,gitlab,stackoverflow
 search_query = "def squares"  # Example search query; modify as needed
 github_results = search_github_code(search_query)
 stackoverflow_results = search_stackoverflow_code(search_query)
