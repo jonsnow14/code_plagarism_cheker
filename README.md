@@ -1,4 +1,4 @@
-# code_plagarism_cheker
+# code_plagarism_checker
 
 # AI Code Similarity Checker
 
